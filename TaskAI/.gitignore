@@ -1,0 +1,368 @@
+# ==============================================================================
+# TaskAI - Full Stack Project .gitignore
+# ==============================================================================
+# This file excludes unwanted files and directories from Git tracking
+# Covers: Python/FastAPI (backend), React/TypeScript (frontend), Docker, and general dev files
+
+# ==============================================================================
+# BACKEND - Python/FastAPI
+# ==============================================================================
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+backend/venv/
+backend/env/
+backend/.venv/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.development
+.env.production
+backend/.env
+backend/.env.local
+backend/.env.development
+backend/.env.production
+
+# FastAPI specific
+.pytest_cache/
+pytest.ini
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ==============================================================================
+# FRONTEND - React/TypeScript/Node.js
+# ==============================================================================
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+build/
+frontend/dist/
+frontend/build/
+
+# Vite
+.vite/
+frontend/.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# ESLint cache
+.eslintcache
+
+# Parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output (if used)
+.next
+
+# Nuxt.js build / generate output (if used)
+.nuxt
+dist
+
+# Gatsby files (if used)
+.cache/
+public
+
+# Storybook build outputs
+storybook-static
+
+# Temporary folders
+tmp/
+temp/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# ==============================================================================
+# DATABASE & DOCKER
+# ==============================================================================
+
+# PostgreSQL data
+postgres-data/
+pg_data/
+database/
+db_data/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+docker-compose.*.yml
+!docker-compose.yml
+
+# Docker volumes and persistent data
+volumes/
+data/
+
+# ==============================================================================
+# IDEs & EDITORS
+# ==============================================================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains IDEs (PyCharm, WebStorm, IntelliJ IDEA, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ==============================================================================
+# OPERATING SYSTEM
+# ==============================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# LOGS & DEBUGGING
+# ==============================================================================
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output/
+
+# Debug files
+debug.log
+error.log
+
+# ==============================================================================
+# TESTING & CI/CD
+# ==============================================================================
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Test results
+test-results/
+test-reports/
+junit.xml
+
+# Allure results
+allure-results/
+allure-report/
+
+# ==============================================================================
+# MISCELLANEOUS
+# ==============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# Archive files (unless specifically needed)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Lock files (keep package-lock.json and pnpm-lock.yaml)
+package-lock.json
+!pnpm-lock.yaml
+
+# Local configuration files
+.localrc
+.local
+
+# Security and sensitive files
+*.key
+*.pem
+*.p12
+*.crt
+*.csr
+secrets.json
+.secrets
