@@ -1,0 +1,18 @@
+# Web Framework
+fastapi
+
+# ASGI Server for development and production
+uvicorn[standard]
+
+# Pydantic for data validation and settings management. [1]
+pydantic
+pydantic-settings
+
+# SQLAlchemy for ORM (Object Relational Mapping)
+SQLAlchemy
+
+# Database driver to connect to PostgreSQL
+psycopg2-binary
+
+# Tooling for database migrations (optional but recommended for production)
+alembic
